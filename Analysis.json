@@ -1,0 +1,17 @@
+{
+  "status": "active",
+  "title": "Nifty Analysis",
+  "message": "Intraday Only.",
+  "redirectUrl": "https://brajeshkumar.in",
+  "posts": [
+    {
+  "id": "NIFTY-20260902-001",
+  "published_at": "2026-09-02 10:30 IST",
+  "symbol": "NIFTY",
+  "timeframe": "15m",
+  "body": "Support and Resistance intraday zone identified. Let's see how price reacts near the zone."
+  "chart": "charts/NIFTY-20260902-001.png"
+}
+    
+  ]
+}
