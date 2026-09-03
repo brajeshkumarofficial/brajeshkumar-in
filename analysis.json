@@ -1,15 +1,15 @@
 {
   "status": "active",
-  "title": "Latest ChartRobo Analysis",
-  "message": "New market observations will be added regularly.",
+  "title": "Nifty Analysis",
+  "message": "Intraday Only.",
   "redirectUrl": "https://brajeshkumar.in",
   "posts": [
     {
-      "id": "20260903-001",
-      "title": "NIFTY 50 Market Observation",
-      "timestamp": "03 Sep 2026 • 10:30 AM",
-      "imageUrl": "https://raw.githubusercontent.com/brajeshkumarofficial/brajeshkumar-in/main/market-charts/NIFTY_2026-09-03_22-41-31.png",
-      "body": "Market observation will be added here. This section is for educational and informational analysis."
+      "id": "20260904-001",
+      "title": "NIFTY Intraday Support/Resistance Zone",
+      "timestamp": "04 Sep 2026 • 01:00 AM",
+      "imageUrl": "https://raw.githubusercontent.com/brajeshkumarofficial/brajeshkumar-in/main/market-charts/NIFTY_2026-09-04_00-56-47.png",
+      "body": "The Intraday support and resitance zone has been drawn on chart. Let's see how price react at zone. This is for educational and informational purpose only."
     }
   ]
 }
