@@ -1,22 +1,22 @@
 {
   "status": "active",
   "title": "Nifty Analysis",
-  "message": "Intraday Only.",
+  "message": "Free Analysis coming soon, stay updated.",
   "redirectUrl": "https://brajeshkumar.in",
   "posts": [
     {
       "id": "20260904-002",
       "title": "NIFTY Post Market Analysis",
       "timestamp": "04 Sep 2026 • 04:46 PM",
-      "imageUrl": "https://raw.githubusercontent.com/brajeshkumarofficial/brajeshkumar-in/main/market-charts/NIFTY_2026-09-04_16-44-23.png",
-      "body": "The Intraday resistance zone worked perfectly. Nifty could not broke it. This is for educational and informational purpose only."
+      "imageUrl": "https://raw.githubusercontent.com/brajeshkumarofficial/brajeshkumar-in/main/market-charts/.png",
+      "body": ". This is for educational and informational purpose only."
     },
     {
       "id": "20260904-001",
       "title": "NIFTY Intraday Support/Resistance Zone",
       "timestamp": "04 Sep 2026 • 01:00 AM",
-      "imageUrl": "https://raw.githubusercontent.com/brajeshkumarofficial/brajeshkumar-in/main/market-charts/NIFTY_2026-09-04_00-56-47.png",
-      "body": "The Intraday support and resistance zone has been drawn on chart. Let's see how price react at zone. This is for educational and informational purpose only."
+      "imageUrl": "https://raw.githubusercontent.com/brajeshkumarofficial/brajeshkumar-in/main/market-charts/.png",
+      "body": "This is for educational and informational purpose only."
     }
   ]
 }
