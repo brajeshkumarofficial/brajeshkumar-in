@@ -4,18 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta
-    name="description"
-    content="Public market analysis and historical chart-based observations by Brajesh Kumar."
-  >
-
+  <meta name="description" content="Market Analysis by Brajesh Kumar — timestamped intraday market analysis, charts and observations.">
   <meta name="author" content="Brajesh Kumar">
   <meta name="robots" content="index, follow">
 
-  <link
-    rel="canonical"
-    href="https://brajeshkumar.in/market-analysis.html"
-  >
+  <link rel="canonical" href="https://brajeshkumar.in/market-analysis.html">
 
   <title>Market Analysis | Brajesh Kumar</title>
 
@@ -23,193 +16,238 @@
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-KMRSJD9DW5"></script>
-
   <script>
     window.dataLayer = window.dataLayer || [];
-
-    function gtag(){
-      dataLayer.push(arguments);
-    }
-
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
+
     gtag('config', 'G-KMRSJD9DW5');
   </script>
 
+  <style>
+    /* Market Analysis Page */
+
+    .analysis-header {
+      text-align: center;
+      max-width: 850px;
+      margin: 0 auto;
+    }
+
+    .analysis-header h1 {
+      margin-bottom: 10px;
+    }
+
+    .analysis-message {
+      font-size: 1.05rem;
+      margin-top: 0;
+    }
+
+    .analysis-status {
+      display: inline-block;
+      margin-top: 15px;
+    }
+
+    .analysis-posts {
+      display: grid;
+      gap: 30px;
+      margin-top: 35px;
+    }
+
+    .analysis-post {
+      overflow: hidden;
+    }
+
+    .analysis-post-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 20px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    .analysis-post-title {
+      margin: 0;
+    }
+
+    .analysis-post-meta {
+      font-size: 0.9rem;
+      opacity: 0.75;
+      margin-top: 8px;
+    }
+
+    .analysis-id {
+      font-size: 0.78rem;
+      padding: 6px 10px;
+      border-radius: 6px;
+      background: rgba(0, 0, 0, 0.06);
+      white-space: nowrap;
+    }
+
+    .analysis-image {
+      width: 100%;
+      display: block;
+      border-radius: 12px;
+      margin: 20px 0;
+      cursor: zoom-in;
+    }
+
+    .analysis-body {
+      font-size: 1rem;
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    .analysis-disclaimer {
+      margin-top: 30px;
+      padding: 18px 20px;
+      border-left: 4px solid currentColor;
+      font-size: 0.9rem;
+      line-height: 1.6;
+      opacity: 0.85;
+    }
+
+    .loading-message,
+    .error-message,
+    .empty-message {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .error-message {
+      border-radius: 10px;
+    }
+
+    @media (max-width: 700px) {
+      .analysis-post-header {
+        display: block;
+      }
+
+      .analysis-id {
+        display: inline-block;
+        margin-top: 12px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
 <header class="site-header">
-
   <div class="container header-inner">
 
     <a class="brand" href="index.html" aria-label="Brajesh Kumar Home">
-
       <div class="brand-mark">BK</div>
 
       <div class="brand-text">
         <strong>Brajesh Kumar</strong>
         <span>Financial Market Research &amp; Analysis</span>
       </div>
-
     </a>
 
     <button
       class="nav-toggle"
       id="navToggle"
       aria-label="Open navigation"
-      aria-expanded="false"
-    >
+      aria-expanded="false">
       &#9776;
     </button>
 
     <nav>
-
       <ul class="nav-list" id="navList">
-
         <li><a href="index.html">Home</a></li>
-
         <li><a href="about.html">About</a></li>
-
         <li><a href="research.html">Research</a></li>
-
-        <li>
-          <a href="market-analysis.html" class="active">
-            Market Analysis
-          </a>
-        </li>
-
+        <li><a href="market-analysis.html">Market Analysis</a></li>
         <li><a href="publications.html">Publications</a></li>
-
         <li><a href="education.html">Education</a></li>
-
         <li><a href="chartrobo.html">ChartRobo</a></li>
-
         <li><a href="contact.html">Contact</a></li>
-
       </ul>
-
     </nav>
 
   </div>
-
 </header>
 
 
 <main>
 
-<!-- PAGE HEADER -->
+  <!-- PAGE INTRO -->
 
-<section class="section">
+  <section class="section section-alt">
 
-  <div class="container">
+    <div class="container">
 
-    <div class="section-head">
+      <div class="analysis-header">
 
-      <div class="eyebrow">
-        Public Market Analysis
-      </div>
+        <div class="eyebrow">
+          Public Market Record
+        </div>
 
-      <h1 id="analysisTitle">
-        Market Analysis
-      </h1>
+        <h1 id="analysisTitle">
+          Market Analysis
+        </h1>
 
-      <p id="analysisMessage">
-        Loading analysis...
-      </p>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- ANALYSIS HISTORY -->
-
-<section class="section section-alt">
-
-  <div class="container">
-
-    <div class="section-head">
-
-      <div class="eyebrow">
-        Analysis History
-      </div>
-
-      <h2>
-        Published Market Observations
-      </h2>
-
-      <p>
-        Historical market observations and chart snapshots published
-        at the respective time of analysis.
-      </p>
-
-    </div>
-
-
-    <div
-      id="analysisFeed"
-      class="grid-2"
-    >
-
-      <!-- Posts will be loaded from analysis.json -->
-
-      <div class="card">
-
-        <h3>Loading analysis...</h3>
-
-        <p>
-          Please wait while the latest analysis is loaded.
+        <p
+          class="analysis-message"
+          id="analysisMessage">
+          Loading analysis...
         </p>
 
+        <span
+          class="badge analysis-status"
+          id="analysisStatus">
+          Loading
+        </span>
+
       </div>
 
     </div>
 
-  </div>
-
-</section>
+  </section>
 
 
-<!-- DISCLAIMER -->
+  <!-- ANALYSIS POSTS -->
 
-<section class="section">
+  <section class="section">
 
-  <div class="container">
+    <div class="container">
 
-    <div class="card">
+      <div
+        id="analysisPosts"
+        class="analysis-posts">
 
-      <div class="eyebrow">
-        Important Information
+        <div class="loading-message">
+          Loading market analysis...
+        </div>
+
       </div>
-
-      <h2>Market Analysis &amp; Research</h2>
-
-      <p>
-        The information presented on this page represents market
-        research, observations and analytical views published at
-        the stated time. It is provided for informational and
-        educational purposes only.
-      </p>
-
-      <p>
-        Market conditions can change rapidly and historical
-        observations should not be interpreted as a guarantee of
-        future market behaviour.
-      </p>
-
-      <p>
-        Each published analysis is presented as part of the
-        historical research record.
-      </p>
 
     </div>
 
-  </div>
+  </section>
 
-</section>
+
+  <!-- DISCLAIMER -->
+
+  <section class="section section-alt">
+
+    <div class="container">
+
+      <div class="analysis-disclaimer">
+
+        <strong>Disclaimer:</strong>
+        The market analysis published on this page is provided
+        for educational and informational purposes only. It represents
+        market observations and research at the time of publication
+        and should not be considered investment advice, a recommendation,
+        or a guarantee of future market performance.
+
+      </div>
+
+    </div>
+
+  </section>
 
 </main>
 
@@ -251,19 +289,27 @@
           </li>
 
           <li>
-            <a href="market-analysis.html">Market Analysis</a>
+            <a href="market-analysis.html">
+              Market Analysis
+            </a>
           </li>
 
           <li>
-            <a href="publications.html">Publications</a>
+            <a href="publications.html">
+              Publications
+            </a>
           </li>
 
           <li>
-            <a href="education.html">Education</a>
+            <a href="education.html">
+              Education
+            </a>
           </li>
 
           <li>
-            <a href="chartrobo.html">ChartRobo</a>
+            <a href="chartrobo.html">
+              ChartRobo
+            </a>
           </li>
 
         </ul>
@@ -296,7 +342,9 @@
           </li>
 
           <li>
-            <a href="contact.html">Contact</a>
+            <a href="contact.html">
+              Contact
+            </a>
           </li>
 
         </ul>
@@ -325,7 +373,263 @@
 
 <script src="js/script.js"></script>
 
-<script src="js/market-analysis.js"></script>
+
+<script>
+  /*
+   * Market Analysis
+   *
+   * Reads the EXISTING analysis.json used by the
+   * ChartRobo Android app.
+   *
+   * Existing fields:
+   * status
+   * title
+   * message
+   * redirectUrl
+   * posts[]
+   *   id
+   *   title
+   *   timestamp
+   *   imageUrl
+   *   body
+   */
+
+  const ANALYSIS_JSON_URL = "analysis.json";
+
+
+  async function loadMarketAnalysis() {
+
+    const titleElement = document.getElementById("analysisTitle");
+    const messageElement = document.getElementById("analysisMessage");
+    const statusElement = document.getElementById("analysisStatus");
+    const postsElement = document.getElementById("analysisPosts");
+
+
+    try {
+
+      const response = await fetch(
+        ANALYSIS_JSON_URL + "?t=" + Date.now()
+      );
+
+
+      if (!response.ok) {
+        throw new Error(
+          "Unable to load analysis.json"
+        );
+      }
+
+
+      const data = await response.json();
+
+
+      /*
+       * Header
+       */
+
+      titleElement.textContent =
+        data.title || "Market Analysis";
+
+
+      messageElement.textContent =
+        data.message || "";
+
+
+      statusElement.textContent =
+        data.status || "Active";
+
+
+      /*
+       * Posts
+       */
+
+      postsElement.innerHTML = "";
+
+
+      if (
+        !data.posts ||
+        !Array.isArray(data.posts) ||
+        data.posts.length === 0
+      ) {
+
+        postsElement.innerHTML = `
+          <div class="empty-message">
+            No market analysis has been published yet.
+          </div>
+        `;
+
+        return;
+      }
+
+
+      /*
+       * IMPORTANT:
+       * We do NOT sort the posts.
+       *
+       * The JSON order is preserved exactly.
+       * Your newest post is already first.
+       */
+
+      data.posts.forEach(function(post) {
+
+        const article = document.createElement("article");
+
+        article.className =
+          "card analysis-post";
+
+
+        /*
+         * Post Header
+         */
+
+        const header = document.createElement("div");
+
+        header.className =
+          "analysis-post-header";
+
+
+        const titleArea = document.createElement("div");
+
+
+        const postTitle = document.createElement("h2");
+
+        postTitle.className =
+          "analysis-post-title";
+
+        postTitle.textContent =
+          post.title || "Market Analysis";
+
+
+        const timestamp = document.createElement("div");
+
+        timestamp.className =
+          "analysis-post-meta";
+
+        timestamp.textContent =
+          post.timestamp || "";
+
+
+        titleArea.appendChild(postTitle);
+        titleArea.appendChild(timestamp);
+
+
+        /*
+         * Analysis ID
+         */
+
+        const id = document.createElement("span");
+
+        id.className =
+          "analysis-id";
+
+        id.textContent =
+          "Analysis ID: " + (post.id || "N/A");
+
+
+        header.appendChild(titleArea);
+        header.appendChild(id);
+
+
+        /*
+         * Chart Image
+         */
+
+        const image = document.createElement("img");
+
+        image.className =
+          "analysis-image";
+
+        image.src =
+          post.imageUrl || "";
+
+        image.alt =
+          post.title || "Market Analysis Chart";
+
+        image.loading =
+          "lazy";
+
+
+        /*
+         * Open image in new tab when clicked
+         */
+
+        image.addEventListener(
+          "click",
+          function() {
+
+            if (post.imageUrl) {
+
+              window.open(
+                post.imageUrl,
+                "_blank",
+                "noopener,noreferrer"
+              );
+
+            }
+
+          }
+        );
+
+
+        /*
+         * Body
+         */
+
+        const body = document.createElement("p");
+
+        body.className =
+          "analysis-body";
+
+        body.textContent =
+          post.body || "";
+
+
+        /*
+         * Build post
+         */
+
+        article.appendChild(header);
+        article.appendChild(image);
+        article.appendChild(body);
+
+
+        postsElement.appendChild(article);
+
+      });
+
+
+    } catch (error) {
+
+      console.error(
+        "Market Analysis Error:",
+        error
+      );
+
+
+      statusElement.textContent =
+        "Unavailable";
+
+
+      postsElement.innerHTML = `
+        <div class="error-message">
+          <h3>Unable to load market analysis</h3>
+          <p>
+            Please try again later.
+          </p>
+        </div>
+      `;
+
+    }
+
+  }
+
+
+  /*
+   * Load when page opens
+   */
+
+  loadMarketAnalysis();
+
+</script>
 
 </body>
 </html>
