@@ -195,3 +195,46 @@ td{color:var(--muted)}
   .footer-grid{grid-template-columns:1fr}
   .page-hero h1{font-size:34px}
 }
+/* =========================================
+   MARKET ANALYSIS
+   ========================================= */
+
+.analysis-card {
+  overflow: hidden;
+}
+
+.analysis-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+}
+
+.analysis-chart {
+  margin-top: 20px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #f4f6f8;
+}
+
+.analysis-chart img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 700px;
+  object-fit: contain;
+}
+
+.analysis-id {
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  font-size: 0.82rem;
+  opacity: 0.75;
+}
+
+.analysis-id code {
+  font-family: monospace;
+  word-break: break-all;
+}
